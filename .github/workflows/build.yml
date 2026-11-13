@@ -1,0 +1,19 @@
+name: Build MediCare
+on: [push, pull_request, workflow_dispatch]
+permissions:
+  contents: read
+jobs:
+  package:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: '11'
+          cache: maven
+      - run: mvn --batch-mode --no-transfer-progress clean package
+      - uses: actions/upload-artifact@v4
+        with:
+          name: medicare-war
+          path: target/medicare-app.war

@@ -1,0 +1,81 @@
+target/
+!.mvn/wrapper/maven-wrapper.jar
+!**/src/main/**/target/
+!**/src/test/**/target/
+.kotlin
+
+### IntelliJ IDEA ###
+# IDEA workspace files are personal - never shared in a group repository
+.idea/
+*.iws
+*.iml
+*.ipr
+
+### Eclipse ###
+.apt_generated
+.classpath
+.factorypath
+.project
+.settings
+.springBeans
+.sts4-cache
+
+### NetBeans ###
+/nbproject/private/
+/nbbuild/
+/nbdist/
+/.nb-gradle/
+build/
+!**/src/main/**/build/
+!**/src/test/**/build/
+
+### VS Code ###
+.vscode/
+
+### Mac OS ###
+.DS_Store
+
+### Windows ###
+Thumbs.db
+Desktop.ini
+
+### Project specific ###
+*.log
+logs/
+uploads/
+medicare-data/
+__pycache__/
+out/
+nbactions.xml
+local.properties
+*.local.properties
+
+# Local settings and secrets
+.env
+.env.*
+!.env.example
+
+# Private database exports
+/medicare_db.sql
+/medicare_db*.sql
+/database/original_snapshot.sql
+/database/private/
+/database/medicare-database-updated.sql
+
+# Additional local exclusions
+target/
+.idea/
+*.iml
+*.log
+medicare-data/
+__pycache__/
+
+# Local configuration and runtime artifacts
+.env
+.env.*
+!.env.example
+.vscode/
+*.class
+*.tmp
+.DS_Store
+Thumbs.db
